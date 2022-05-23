@@ -1,0 +1,64 @@
+body{height: 3000px;
+
+}
+.About-Me-Div{
+  height: 700px;
+  background-color: #252a34;
+  margin-top: 16px;
+  border-radius: 10px;
+  display: flex;
+  
+  
+  
+  
+}
+
+.my-pic-div{
+ 
+ margin-left: 60px;
+ margin-right: 40px;
+
+
+}
+
+.my-pic{
+  width: 500px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-radius: 1000px;
+  
+}
+
+.Beside-Pic-Div{
+
+  flex: 1;
+  
+  
+  
+}
+
+
+.About-Me-Heading{
+  Font-Size: 70px;
+  border: none;
+  background-color: transparent;
+  font-family: Arial;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.about-me-HR{
+ 
+}
+.About-Me-Par{
+  padding-left: 100px;
+  padding-right: 100px;
+  line-height: 40px;
+  font-size: 30px;
+  font-family: arial;
+  color: white;
+}
+
