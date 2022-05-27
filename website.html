@@ -1,68 +1,122 @@
 <!DOCTYPE html>
-
 <html>
   <head>
-    
+    <script> history.scrollRestoration = "manual"
+
+      $(window).on('beforeunload', function(){
+            $(window).scrollTop(0);
+      });</script>
+    <style>
+        
+    .fa {
+      padding: 16px;
+      font-size: 30px;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      text-decoration: none;
+
+    }
+
+    /* Add a hover effect if you want */
+    .fa:hover {
+      opacity: 0.7;
+    }
+    </style>
+        <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   </head>
   
-  <body style="margin-left: 291.5px; margin-right: 291.5px; height: 4000px;">
+
+
+
+
+  <body  class="container px-4 py-5" id="Contact" style="margin-bottom: 45px;">
    <!-- Javascript for linkedin badge -->
    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     
+
+    
     <!--Header--------------------------------------------------------------------------------------------->
-    <div style="position: fixed; z-index: 10; background-color: white;" class="container">
+    <div class="Header-div" id="Header-ID">
+    <div style=" position: fixed; top: 0; z-index: 20; background-color: white;" class="container">
       <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
         <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
           <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><img style="height: 80px" src="Images/A-logo.jpg"></svg>
         </a>
-  
         <ul class="nav nav-pills">
-          <li class="nav-item"><a href="#" class="nav-link active"  aria-current="page">Home</a></li>
-          <li class="nav-item"><a href="#" class="nav-link" style="color: black;">About</a></li>
-          <li class="nav-item"><a href="#" class="nav-link" style="color: black;">Skills</a></li>
-          <li class="nav-item"><a href="#" class="nav-link" style="color: black;">Projects</a></li>
-          <li class="nav-item"><a href="#" class="nav-link" style="color: black;">Experience</a></li>
-          <li class="nav-item"><a href="#" class="nav-link" style="color: black;">Contact</a></li>
+          <li class="nav-item"><a href="#Header-ID" class="nav-link active"  aria-current="page">Home</a></li>
+          <li class="nav-item"><a href="#About-me-Scroll" class="nav-link" style="color: black;">About</a></li>
+          <li class="nav-item"><a href="#Skills-Scroll" class="nav-link" style="color: black;">Skills</a></li>
+          <li class="nav-item"><a href="#Projects-Scroll" class="nav-link" style="color: black;">Projects</a></li>
+          <li class="nav-item"><a href="#Experience-Scroll" class="nav-link" style="color: black;">Experience</a></li>
+          <li class="nav-item"><a href="#Contact-Scroll" class="nav-link" style="color: black;">Contact</a></li>
         </ul>
        
         <div class="col-md-3 text-end">
         </div>
       </header>
     </div>
-
-    <!--Centered-Hero--------------------------------------------------------------------------------------->
-    <div class="container col-xxl-8 px-4 py-5">
+  </div>
+    <!--Home--------------------------------------------------------------------------------------->
+    <div class="home-div">
+    <div class="container col-xxl-8 px-4 py-5" style="margin-bottom: 0px;  padding-top: 0px;">
       <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-        <div class="col-10 col-sm-8 col-lg-6">
+        <div class="col-10 col-sm-8 col-lg-6" style="margin-top: 200px;">
           <img src="Images/MyPic.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="500" height="500" loading="lazy">
         </div>
         <div class="col-lg-6">
           <h1 class="display-5 fw-bold lh-1 mb-3">Adam Azizi</h1>
-          <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+          <p class="lead" style="font-size:25px;">Software Engineering Intern at Salumatics Inc & </p>
+          <p class="lead" style="font-size:25px;">Software Engineering Student at Toronto Metropolitan (Formerly Ryerson) University.</p>
           <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">LinkedIn</button>
-            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Github</button>
-            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Add graphic buttons instead of these</button>
+             <!-- Add font awesome icons -->
+    <a href="#" class="fa fa-linkedin" style=" background: #007bb5; color: white;"></a>
+    <a href="#" class="fa fa-github" style=" background: black; color: white;"></a>
+    <a href="#" class="fa fa-google" style=" background: #dd4b39; color: white;"></a>
+    <a href="#" class="fa fa-instagram" style=" background: #dd4b39; color: white;"></a>
           </div>
         </div>
       </div>
     </div>
-
+  </div>
+    <!--About Me---------------------------------------------------------------------------------------------->  
+    <div id="About-me-Scroll"><br><br><br></div>    
+    <div class="About-me-div">
+      <div class="container px-4 py-5" id="About-me">
+    <h1 class="display-3 fw-bold" style="text-align: center;">About Me</h1>
+      <hr>
+    <div class="container col-xxl-8 px-4 py-8">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="Images/soccerpic-1.JPG" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+        </div>
+        <div class="col-lg-6" style="margin-top: 70px;">
+          <p class="lead">Hey! I am Adam, current Software Software Engineering Student at Toronto Metropolitan University.</p>
+          <p class="lead">I have been passionate about programming since I was in Secondary School and have been learning new languages, technologies, and frameworks ever since. I am into both backend and frontend development as I find both to be extremely imporant in Software Engineering.</p>          <p class="lead">Aside from programming, I play and watch Soccer and I have been supporting FC Barcelona since my childhood. I also play video games such as valorant and League of Legends. I am very easy to approach and talk to so feel free to message me on any of my social media platforms.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
     <!--Skills---------------------------------------------------------------------------------------------->      
-    <div class="Skills">
+    <div id="Skills-Scroll"><br><br><br><br><br></div>
+    <h1 class="display-3 fw-bold" style="text-align: center; ">Skills</h1>
+    <hr style="margin-bottom: 100px;">
+    <div class="Skills-div" style="margin-left: 25px; margin-right: 25px;" >
                         <!--Frontend--->
-      <div class="container px-4 py-5" id="Frontend" style="margin-bottom: 45px;">
-        <h1 class="display-3 fw-bold" style="text-align: center; ">Skills</h1>
-         <hr style="margin-bottom: 100px;">
+         <div class="container px-4 py-5" id="Tech">               
         <h2 class="pb-2 border-bottom"><b>Frontend</b></h2>
-    
+       
         <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
 
-          <div class="col" style="width: 150px; height: 150px; margin-right: 78px;">
+          <div class="col" style="width: 130px; height: 130px; margin-right: 83px;">
             <div class="card card-cover h-100" style="border: none;"> <img src="Images/HTML-logo.png" style="background-repeat: no-repeat; background-size: cover; ">
               <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
               </div>
@@ -70,7 +124,7 @@
             <h2 style="text-align: center; padding-top: 16px;">HTML</h2>
           </div>
 
-          <div class="col" style="width: 150px; height: 150px; margin-right: 78px;">
+          <div class="col" style="width: 130px; height: 130px; margin-right: 83px;">
             <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4" style="border: none; background-image: url('Images/CSS_logo.png'); background-repeat: no-repeat; background-size: cover; background-position: 50%;">
               <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
               </div>
@@ -78,7 +132,7 @@
             <h2 style="text-align: center; padding-top: 16px;">CSS</h2>
           </div>
 
-          <div class="col" style="width: 150px; height: 150px; margin-right: 78px;">
+          <div class="col" style="width: 130px; height: 130px; margin-right: 83px;">
             <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4" style="border: none; background-image: url('Images/js-logo.png'); background-repeat: no-repeat; background-size: cover; background-position: 50%;">
               <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
               </div>
@@ -86,7 +140,7 @@
             <h2 style="text-align: center; padding-top: 16px;">Javascript</h2>
           </div>
 
-          <div class="col" style="width: 150px; height: 150px; margin-right: 78px;">
+          <div class="col" style="width: 130px; height: 130px; margin-right: 83px;">
             <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4" style="border: none; background-image: url('Images/angular-logo.png'); background-repeat: no-repeat; background-size: cover; background-position: 50%;">
               <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
               </div>
@@ -94,7 +148,7 @@
             <h2 style="text-align: center; padding-top: 16px; ">Angular</h2>
           </div>  
 
-          <div class="col" style="width: 150px; height: 150px; margin-right: 78px;">
+          <div class="col" style="width: 130px; height: 130px; margin-right: 83px;">
             <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4" style="border: none; background-image: url('Images/React-logo.png'); background-repeat: no-repeat; background-size: cover; background-position: 50%;">
               <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
               </div>
@@ -102,7 +156,7 @@
             <h2 style="text-align: center; padding-top: 16px;">React</h2>
           </div>    
           
-          <div class="col" style="width: 150px; height: 150px;">
+          <div class="col" style="width: 130px; height: 130px;">
             <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4" style="border: none; background-image: url('Images/bootstrap-logo.png'); background-repeat: no-repeat; background-size: cover; background-position: 50%;">
               <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
               </div>
@@ -112,14 +166,14 @@
           
           
         </div>
-      </div>
+         </div>
                         <!--Backend--->
       <div class="container px-4 py-5" id="Backend" style="margin-bottom: 45px;">
         <h2 class="pb-2 border-bottom"><b>Backend</b></h2>
     
         <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
           
-          <div class="col" style="width: 150px; height: 150px; margin-right: 78px;">
+          <div class="col" style="width: 130px; height: 130px; margin-right: 83px;">
             <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4" style="border: none; background-image: url('Images/Java-Emblem.jpg'); background-repeat: no-repeat; background-size: cover; background-position: 50%;">
               <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
               </div>
@@ -127,7 +181,7 @@
             <h2 style="text-align: center; padding-top: 16px;">Java</h2>
           </div>
 
-          <div class="col" style="width: 150px; height: 150px; margin-right: 78px;">
+          <div class="col" style="width: 130px; height: 130px; margin-right: 83px;">
             <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4" style="border: none; background-image: url('Images/js-logo.png'); background-repeat: no-repeat; background-size: cover; background-position: 50%;">
               <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
               </div>
@@ -135,7 +189,7 @@
             <h2 style="text-align: center; padding-top: 16px;">Javascript</h2>
           </div>
 
-          <div class="col" style="width: 150px; height: 150px; margin-right: 78px;">
+          <div class="col" style="width: 130px; height: 130px; margin-right: 83px;">
             <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4" style="border: none; background-image: url('Images/php-logo.png'); background-repeat: no-repeat; background-size: cover; background-position: 50%;">
               <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
               </div>
@@ -143,7 +197,7 @@
             <h2 style="text-align: center; padding-top: 16px;">PHP</h2>
           </div>
 
-          <div class="col" style="width: 150px; height: 150px; margin-right: 78px;">
+          <div class="col" style="width: 130px; height: 130px; margin-right: 83px;">
             <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4" style="border: none; background-image: url('Images/CSharp-logo.png'); background-repeat: no-repeat; background-size: cover; background-position: 50%;">
               <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
               </div>
@@ -151,7 +205,7 @@
             <h2 style="text-align: center; padding-top: 16px;">C#</h2>
           </div>
 
-          <div class="col" style="width: 150px; height: 150px; margin-right: 78px;">
+          <div class="col" style="width: 130px; height: 130px; margin-right: 83px;">
             <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4" style="border: none; background-image: url('Images/C-logo.png'); background-repeat: no-repeat; background-size: cover; background-position: 50%;">
               <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
               </div>
@@ -159,7 +213,7 @@
             <h2 style="text-align: center; padding-top: 16px;">C</h2>
           </div>
 
-          <div class="col" style="width: 150px; height: 150px;">
+          <div class="col" style="width: 130px; height: 130px;">
             <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4" style="border: none; background-image: url('Images/Cpp-logo.png'); background-repeat: no-repeat; background-size: cover; background-position: 50%;">
               <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
               </div>
@@ -174,7 +228,7 @@
     
         <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
 
-          <div class="col" style="width: 150px; height: 150px; margin-right: 78px;">
+          <div class="col" style="width: 130px; height: 130px; margin-right: 83px;">
             <div class="card card-cover h-100" style="border: none;"> <img src="Images/dotnet-logo.png" style="background-repeat: no-repeat; background-size: cover;">
               <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
               </div>
@@ -182,7 +236,7 @@
             <h2 style="text-align: center; padding-top: 16px;">.Net</h2>
           </div>
 
-          <div class="col" style="width: 150px; height: 150px; margin-right: 78px;">
+          <div class="col" style="width: 130px; height: 130px; margin-right: 83px;">
             <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4" style="border: none; background-image: url('Images/azure-logo.png'); background-repeat: no-repeat; background-size: cover; background-position: 50%;">
               <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
               </div>
@@ -190,7 +244,7 @@
             <h2 style="text-align: center; padding-top: 16px;">Azure</h2>
           </div>
 
-          <div class="col" style="width: 150px; height: 150px; margin-right: 78px;">
+          <div class="col" style="width: 130px; height: 130px; margin-right: 83px;">
             <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4" style="border: none; background-image: url('Images/GitHub-Mark.png'); background-repeat: no-repeat; background-size: cover; background-position: 50%;">
               <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
               </div>
@@ -198,7 +252,7 @@
             <h2 style="text-align: center; padding-top: 16px;">Github</h2>
           </div>  
 
-          <div class="col" style="width: 150px; height: 150px; margin-right: 78px;">
+          <div class="col" style="width: 130px; height: 130px; margin-right: 83px;">
             <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4" style="border: none; background-image: url('Images/git-logo.png'); background-repeat: no-repeat; background-size: cover; background-position: 50%;">
               <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
               </div>
@@ -206,7 +260,7 @@
             <h2 style="text-align: center; padding-top: 16px;">Git</h2>
           </div>   
 
-          <div class="col" style="width: 150px; height: 150px; margin-right: 78px;">
+          <div class="col" style="width: 130px; height: 130px; margin-right: 83px;">
             <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4" style="border: none; background-image: url('Images/MySQL.png'); background-repeat: no-repeat; background-size: cover; background-position: 50%;">
               <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
               </div>
@@ -214,7 +268,7 @@
             <h2 style="text-align: center; padding-top: 16px;">MySQL</h2>
           </div>  
 
-          <div class="col" style="width: 150px; height: 150px;">
+          <div class="col" style="width: 130px; height: 130px;">
             <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4" style="border: none; background-image: url('Images/SQL.png'); background-repeat: no-repeat; background-size: cover; background-position: 50%;">
               <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
               </div>
@@ -223,16 +277,100 @@
           </div> 
           
         </div>
-      </div>
-    </div>  
+      </div> 
+    </div>
     
+    <!--Projects---------------------------------------------------------------------------------------------->    
+    <div id="Projects-Scroll"><br><br><br><br><br></div>
+    <div class="Projects-div" >
+      <h1 class="display-3 fw-bold" style="text-align: center;">Projects</h1>
+      <hr>
+      <div class="container col-xxl-8 px-4 ">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="Images/MyWebsite-Pic3.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="200" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h2><b>Fully Functional <br> E-Commerce Website</b> <h6 class="pb-2 border-bottom" style="color: rgb(25, 124, 216);">ASP.NET/C#/HTML/CSS/Javascript</h6></h2>
+            <p class="lead">Using my frontend and backend development skills, I built a fully functional e-commerce website.</p>
+            <p class="lead">Using my frontend and backend development skills, I built a fully functional e-commerce website.</p>
+            <p class="lead">Using my frontend and backend development skills, I built a fully functional e-commerce website.</p>
+            <p class="lead">Using my frontend and backend development skills, I built a fully functional e-commerce website.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Github Link</button>
+              <button type="button" class="btn btn-outline-secondary btn-lg px-4">Website</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6" >
+            <img src="Images/MyWebsite-Pic7.png"  class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="800" height="200" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h2><b>My Website</b> <h6 class="pb-2 border-bottom" style="color: rgb(25, 124, 216);">HTML/CSS/Javascript</h6></h2>
+            <p class="lead">Using my frontend development skills, I built my own Website.</p>
+            <p class="lead">This website shows everything about me from hobbies to skills to experience and projects.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Github Link</button>
+              <button type="button" class="btn btn-outline-secondary btn-lg px-4">Website</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+   <!--Experience----------------------------------------------------------------------------------------------> 
+   <div id="Experience-Scroll"><br><br><br><br><br></div>
+   <div class="Experience-div">
+    <h1 class="display-3 fw-bold" style="text-align: center;">Experience</h1>
+    <hr style="margin-bottom: 60px;">
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <h3  style="margin-bottom: 6px;">Software Engineering Intern</h3>
+            <strong class="d-inline-block mb-2 text-primary">May 2022 - Present</strong>
+            <p class="card-text mb-auto">Using my frontend and backend development skills, I built a fully functional e-commerce website.</p>
+            <p class="card-text mb-auto">Using my frontend and backend development skills, I built a fully functional e-commerce website.</p>
+            <p class="card-text mb-auto">Using my frontend and backend development skills, I built a fully functional e-commerce website.</p>
+            <p class="card-text mb-auto">Using my frontend and backend development skills, I built a fully functional e-commerce website.</p>
+            <a href="#" class="stretched-link">Github Link</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+             <img src="images/Salumatics-logo.png">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <h3  style="margin-bottom: 6px;">My Own Website</h3>
+            <strong class="d-inline-block mb-2 text-primary">HTML/CSS/Javascript</strong>
+            <p class="card-text mb-auto">Using my frontend development skills, I built my own website that shows my skills, projects and experience.</p>
+            <a href="#" class="stretched-link">Github Link</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+    
+          </div>
+        </div>
+      </div>
+
+    </div> 
+    </div> 
+
+    <!--Contact---------------------------------------------------------------------------------------------->      
+    <div id="Contact-Scroll"><br><br><br><br><br></div>
     <div class="Contact">
       <h1 class="display-3 fw-bold" style="text-align: center; ">Contact</h1>
          <hr style="margin-bottom: 100px;">
       <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="adamazizi" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://ca.linkedin.com/in/adamazizi?trk=profile-badge">Adam Azizi</a></div>
-              
-    </div>
+    </div>     
     
+         
        
 
   </body>
