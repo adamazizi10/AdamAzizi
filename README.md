@@ -1,2 +1,1 @@
-# MyWebsite
-This is my main website.
+My personal website used as a portfoilio and for blogs.
